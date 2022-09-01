@@ -1,1 +1,7 @@
-<p>tools-menu works!</p>
+<div class="tools-container"
+  [ngStyle]="{'top': menuPos.y + 'px', 'left': menuPos.x + 'px'}"
+>
+  <button type="button" (click)="edit()">Edit</button>
+  <button type="button" (click)="delete()">Delete</button>
+</div>
+

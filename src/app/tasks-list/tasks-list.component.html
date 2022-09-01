@@ -1,1 +1,27 @@
-<p>tasks-list works!</p>
+<div class="main-content-container">
+  <div class="new-task-container">
+    <input type="text" [(ngModel)]="newTaskInput">
+    <button (click)="addTask()">Add New Task</button>
+  </div>
+  <div class="tasks-list-container" >
+    <ul class="tasks-list">
+      <li *ngFor="let task of tasksList">
+  <span class="task-container" >
+  <input type="checkbox" (click)="onCheckbox(task)">
+  <div class="task-text"
+       [ngStyle]="{'text-decoration': task.isChecked ? 'line-through' : ''}"
+       (contextmenu)="showMenu(task, $event)">
+    {{task.text}}
+  </div>
+  </span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-tools-menu
+  [menuPos]="menuPos"
+  *ngIf="isMenuTriggered"
+  [(isMenuTriggered)]="isMenuTriggered"
+  [task]="selectedTask"
+></app-tools-menu>

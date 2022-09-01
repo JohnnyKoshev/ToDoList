@@ -1,3 +1,5 @@
-export interface TasksList {
-  text: string
+export interface Task {
+  id?: number;
+  text: string;
+  isChecked?: boolean;
 }
