@@ -30,6 +30,9 @@ export class ToolsMenuComponent implements OnInit {
       alert('The task text can not be empty!')
       newText = prompt('Enter the new task text:')!;
     }
+    if(newText === null){
+      return;
+    }
     if (this.task) {
       this.task.text = newText;
       this.tasksListService.editTask(this.task);
