@@ -1,5 +1,3 @@
-README.md
-
 # Angular Task Management Project
 
 This is a sample Angular project for managing tasks. It allows users to add new tasks, mark tasks as completed, edit task text, and delete tasks. The project consists of two components: `TasksListComponent` and `ToolsMenuComponent`.
