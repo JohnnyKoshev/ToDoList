@@ -21,9 +21,19 @@ The `ToolsMenuComponent` is a reusable component used within the `TasksListCompo
 
 ## Installation
 
-1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd angular-task-management`
-3. Install dependencies: `npm install`
+1. Clone the repository: 
+
+```
+git clone https://github.com/JohnnyKoshev/ToDoList.git
+```
+
+3. Navigate to the project directory: 
+
+```
+cd ToDoList
+```
+
+5. Install dependencies: `npm install`
 
 ## Development server
 
@@ -49,6 +59,3 @@ This project was created as a sample application for demonstration purposes.
 ## License
 
 The project is released under the MIT License. Feel free to use and modify the code according to your needs.
-
-
-
